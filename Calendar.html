@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <title>CALENDAR</title>
+    <style>
+        body{
+                background-color:rgb(209, 225, 242);
+                margin-left: 100px;
+                margin-right: 100px;
+                background-image: url(paris);
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+        }
+        .cal{
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            justify-content: space-around;
+        }
+
+        tr,th{
+            border-color:rgb(0, 0, 0);
+            border: 1px solid;
+        }
+        h1,h2,h5{
+            padding-top: 10px;
+            font-family: fantasy;
+        }
+        h1{
+            background-color: rgb(236, 118, 118);
+        }
+        h2{
+            background-color: rgb(227, 15, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>
+            <div>
+                <h1 class="container text-center text-success"> <img src="OIP-removebg-preview.png"  width="90px" height="90px"> CALENDAR</h1>
+            </div>
+        <div class="cal text-center mt-5 mb-5">           
+                             <!--Month of January-->
+                <div>
+                    <table class="table table-hover table-responsive">
+                        <h2 class="container text-warning mb-3">JANUARY</h2>
+
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th class="text-danger">1 </th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                        </tr>
+
+                        <tr>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                        </tr>
+
+                        <tr>
+                                <th>21</th>
+                                <th>22</th>
+                                <th class="text-danger">23</th>
+                                <th>24</th>
+                                <th>25</th>
+                                <th>26</th>
+                                <th>27</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>28</th>
+                                <th>29</th>
+                                <th>30</th>
+                                <th>31</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                        </tr>
+                        </table>
+
+                        <div>
+                            <!--Holiday of January-->
+                            <h5 class="text-black">JANUARY 1-NEW YEAR</h5>
+                            <h5 class="text-black">JANUARY 23- FIRST PHILIPPINE REPUBLIC DAY</h5>
+                        </div>
+                </div>
+                            <!--Month of February-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                            <h2 class=" container table-dark text-warning">FEBRUARY</h2>
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>1</th>
+                                <th class="text-danger">2</th>
+                                <th>3</th>
+                        </tr>
+
+                        <tr>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th class="text-danger">10</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                        </tr>
+
+                        <tr>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                                <th>21</th>
+                                <th>22</th>
+                                <th>23</th>
+                                <th class="text-danger">24</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th class="text-danger">25</th>
+                                <th>26</th>
+                                <th>27</th>
+                                <th>28</th>
+                                <th>29</th>
+                                <th></th>
+                                <th></th>
+                        </tr>
+                        </table>
+
+                        <div>
+                                <!--Holiday of February-->
+                                <h5 class="text-black"> FEBRUARY 2- CONSTITUTION DAY</h5>
+                                <h5 class="text-black"> FEBRUARY 10- CHINESE NEW YEAR</h5>
+                                <h5 class="text-black"> FEBRUARY 24- LANTERN FESTIVAL </h5>
+                                <h5 class="text-black"> FEBRUARY 25- EDSA REVOLUTION ANNIVERSARY</h5>
+                        </div>
+                </div>
+                            <!--Month of March-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class="container table-dark text-warning">MARCH</h2>
+
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                        </tr>
+
+                        <tr>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                        </tr>
+
+                        <tr>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                                <th>21</th>
+                                <th>22</th>
+                                <th>23</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>24</th>
+                                <th>25</th>
+                                <th>26</th>
+                                <th>27</th>
+                                <th class="text-danger">28</th>
+                                <th class="text-danger">29</th>
+                                <th class="text-danger">30</th>
+                        </tr>
+
+                        <tr>
+                                <th class="text-danger">31</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                        </tr>
+                        </table>
+
+                        <div>
+                                <!--Holiday of March-->
+                                <h5 class="text-black"> MARCH 28- MAUNDY THURSDAY</h5>
+                                <h5 class="text-black"> MARCH 29- GOOD FRIDAY</h5>
+                                <h5 class="text-black"> MARCH 30- EASTER SATURDAY </h5>
+                                <h5 class="text-black"> MARCH 31- EASTER SUNDAY</h5>
+                        </div>
+
+                </div>
+                            <!--MONTH OF APRIL-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class="container table-dark text-warning">APRIL</h2>
+
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                        </tr>
+
+                        <tr>
+                                <th>7</th>
+                                <th>8</th>
+                                <th class="text-danger">9</th>
+                                <th class="text-danger">10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                        </tr>
+
+                        <tr>
+                                <th>21</th>
+                                <th>22</th>
+                                <th>23</th>
+                                <th>24</th>
+                                <th>25</th>
+                                <th>26</th>
+                                <th class="text-danger">27</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>28</th>
+                                <th>29</th>
+                                <th>30</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                        </tr>
+                        </table>
+
+                        <div>
+                            <!--HOLIDAY OF APRIL-->
+                            <h5 class="text-black"> APRIL 9- DAY OF VALOR</h5>
+                            <h5 class="text-black"> APRIL 10- END OF RAMADAN</h5>
+                            <h5 class="text-black"> APRIL 27- LAPU-LAPU DAY</h5>
+                        </div>
+                </div>
+                            <!--MONTH OF MAY-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class=" container table-dark text-warning">MAY</h2>
+
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th class="text-danger">1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                        </tr>
+
+                        <tr>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                        </tr>
+
+                        <tr>
+                                <th>19</th>
+                                <th>20</th>
+                                <th>21</th>
+                                <th>22</th>
+                                <th>23</th>
+                                <th>24</th>
+                                <th>24</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>25</th>
+                                <th>26</th>
+                                <th>27</th>
+                                <th>28</th>
+                                <th>30</th>
+                                <th>31</th>
+                                <th></th>
+                        </tr>
+                        </table>
+
+                        <div>
+                            <!--HOLIDAY OF MAY-->
+                            <h5 class="text-black"> MAY 1- LABOR DAY</h5>
+                        </div>
+                </div>
+                            <!--MONTH OF JUNE-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class="container table-dark text-warning">JUNE</h2>
+
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>1</th>
+                        </tr>
+
+                        <tr>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th class="text-danger">12</th>
+                                <th>13</th>
+                                <th>14</th>
+                                <th>15</th>
+                        </tr>
+
+                        <tr>
+                                <th class="text-danger">16</th>
+                                <th>17</th>
+                                <th>18</th>
+                                <th class="text-danger">19</th>
+                                <th>20</th>
+                                <th>21</th>
+                                <th>22</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>23</th>
+                                <th>24</th>
+                                <th>25</th>
+                                <th>26</th>
+                                <th>27</th>
+                                <th>28</th>
+                                <th>29</th>
+                        </tr>
+                        
+                        <tr>
+                                <th>30</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                        </tr>
+                        </table>
+
+                        <div>
+                               
+                            <!--HOLIDAY OF JUNE-->
+                            <h5 class="text-black"> JUNE 12- INDEPENDENCE DAY</h5>
+                            <h5 class="text-black"> JUNE 16- FEAST OF THE SACTRIFICE</h5>
+                            <h5 class="text-black"> JUNE 19- JOSE RIZAL'S BIRTHDAY</h5> 
+                        </div>
+                 </div>
+                            <!--MONTH OF JULY-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class="container table-dark text-warning">JULY</h2>
+
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                        </tr>
+
+                        <tr>
+                                <th class="text-danger">7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                        </tr>
+
+                        <tr>
+                                <th>21</th>
+                                <th>22</th>
+                                <th>23</th>
+                                <th>24</th>
+                                <th>25</th>
+                                <th>26</th>
+                                <th class="text-danger">27</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>28</th>
+                                <th>29</th>
+                                <th>30</th>
+                                <th>31</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                        </tr>
+                        </table>
+
+                        <div>
+                            <!--HOLIDAY OF JULY--> 
+                            <h5 class="text-black"> JULY 7- ISLAMIC NEW YEAR</h5>
+                            <h5 class="text-black"> JULY 27-IGLESIA NI CRISTO DAY</h5> 
+                        </div>
+                </div>
+                            <!--MONTH OF AUGUST-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class="container table-dark text-warning">AUGUST</h2>
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                        </tr>
+
+                        <tr>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                                <th>16</th>
+                                <th>16</th>
+                                <th>17</th>
+                        </tr>
+
+                        <tr>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                                <th class="text-danger">21</th>
+                                <th>22</th>
+                                <th>23</th>
+                                <th>24</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>25</th>
+                                <th class="text-danger">26</th>
+                                <th>27</th>
+                                <th>28</th>
+                                <th>29</th>
+                                <th>30</th>
+                                <th>31</th>
+
+                        </tr>
+
+                        </table>
+
+                        <div>
+                                <!--HOLIDAY OF AUGUST-->
+                                <h5 class="text-black"> AUGUST 21- NINOY AQUINO DAY</h5>
+                                <h5 class="text-black"> AUGUST 26-NATIONAL HEROE'S DAY</h5>
+                        </div>
+                </div>
+                            <!--MONTH OF SEPTEMBER-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class="container table-dark text-warning">SEPTEMBER</h2>
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                        </tr>
+
+                        <tr>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th class="text-danger">15</th>
+                                <th>16</th>
+                                <th class="text-danger">17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                                <th>21</th>
+                        </tr>
+
+                        <tr>
+                                <th>22</th>
+                                <th>23</th>
+                                <th>24</th>
+                                <th>25</th>
+                                <th>26</th>
+                                <th>27</th>
+                                <th>28</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>29</th>
+                                <th>30</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>       
+                        </tr>
+
+                        </table>
+
+                        <div>
+                            <!--HOLIDAY OF SEPTEMBER-->
+                            <h5 class="text-black"> SEPTEMBER 15- BIRTHDAY OF MUHAMMAD</h5>
+                            <h5 class="text-black"> SEPTEMBER 17-MID-AUTUMN FESTIVAL</h5>
+                        </div>
+                </div>
+                            <!--MONTH OF OCTOBER-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class="container table-dark text-warning">OCTOBER</h2>
+
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                        </tr>
+
+                        <tr>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                        </tr>
+                        <tr class="table-secondary">
+                                <th>13</th>
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                        </tr>
+                        <tr>
+                                <th>20</th>
+                                <th>21</th>
+                                <th>22</th>
+                                <th>23</th>
+                                <th>24</th>
+                                <th>25</th>
+                                <th>26</th>
+                        </tr>
+                        <tr class="table-secondary">
+                                <th>27</th>
+                                <th>28</th>
+                                <th>29</th>
+                                <th>30</th>
+                                <th>31</th>
+                                <th></th>
+                                <th></th>
+                        </tr>
+                
+                        </table>
+
+                        <div>
+                            <!--NO HOLIDAY-->
+                            <h5 class="text-danger font-fantasy">NO HOLIDAY</h1>
+                        </div>
+                </div>
+                            <!--MONTH OF NOVEMBER-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class="container table-dark text-warning">NOVEMBER</h2>
+
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th class="text-danger">1</th>
+                                <th class="text-danger">2</th>
+                        </tr>
+
+                        <tr>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                        </tr>
+
+                        <tr>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                                <th>21</th>
+                                <th>22</th>
+                                <th>23</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>24</th>
+                                <th>25</th>
+                                <th>26</th>
+                                <th>27</th>
+                                <th>28</th>
+                                <th>29</th>
+                                <th class="text-danger">30</th>
+                        </tr>
+                        </table>
+
+                        <div>
+                                <!--HOLIDAY OF NOVEMBER-->
+                                <h5 class="text-black"> NOVEMBER 1- ALL SAINT'S DAY</h5>
+                                <h5 class="text-black"> NOVEMBER 2- ALL SOUL'S DAY</h5>
+                                <h5 class="text-black"> NOVEMBER 30- BONIFACIO DAY</h5>
+                        </div>
+                </div>
+                            <!--MONTH OF DECEMBER-->
+                <div>
+                        <table class="table table-hover table-responsive">
+                                <h2 class="container table-dark text-warning">DECEMBER</h2>
+
+                        <tr> 
+                                <th class="table-dark text-danger">SUN</th>
+                                <th class="table-dark">MON</th>
+                                <th class="table-dark">TUE</th>
+                                <th class="table-dark">WED</th>
+                                <th class="table-dark">THU</th>
+                                <th class="table-dark">FRI</th>
+                                <th class="table-dark">SAT</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                        </tr>
+
+                        <tr>
+                                <th class="text-danger">8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                                <th>21</th>
+                        </tr>
+
+                        <tr>
+                                <th>22</th>
+                                <th>23</th>
+                                <th class="text-danger">24</th>
+                                <th class="text-danger">25</th>
+                                <th>26</th>
+                                <th>27</th>
+                                <th>28</th>
+                        </tr>
+
+                        <tr class="table-secondary">
+                                <th>29</th>
+                                <th class="text-danger">30</th>
+                                <th class="text-danger">31</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                        </tr>
+
+                        </table>
+
+                        <div>
+                                <!--HOLIDAY OF DECEMBER-->
+                                <h5 class="text-black"> DECEMBER 24- CHRISTMAS EVE</h5>
+                                <h5 class="text-black"> DECEMBER 25- CHRISTMAS DAY</h5>
+                                <h5 class="text-black"> DECEMBER 30- RIZAL DAY</h5>
+                                <h5 class="text-black"> DECEMBER 31- NEW YEAR'S EVE</h5> 
+                        </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
